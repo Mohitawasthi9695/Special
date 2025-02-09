@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Chocolate Day Shagun!</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        .heart {
+            color: #ff4d6d;
+            font-size: 2em;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .chocolate-bg {
+            background: linear-gradient(135deg, #3c1f1e 0%, #2c1810 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .quote-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .quote-card:hover {
+            transform: scale(1.02);
+        }
+
+        .chocolate-title {
+            font-family: 'Brush Script MT', cursive;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="chocolate-bg">
+    <div class="container py-5">
+        <header class="text-center mb-5 fade-in">
+            <h1 class="chocolate-title display-3">Dear Shagun</h1>
+            <p class="lead">On this sweet day of love...</p>
+            <span class="heart">❤️</span>
+        </header>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6">
+                <div class="quote-card p-4 mb-4 floating">
+                    <img src="/api/placeholder/400/300" alt="Chocolate hearts" class="img-fluid rounded mb-3">
+                    <p class="lead">"Life is like a box of chocolates, but you're the sweetest part of mine."</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="quote-card p-4 mb-4 floating" style="animation-delay: 0.5s">
+                    <img src="/api/placeholder/400/300" alt="Romantic scene" class="img-fluid rounded mb-3">
+                    <p class="lead">"Like chocolate melts in warmth, my heart melts for you every single day."</p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="quote-card p-4 text-center">
+                    <h2 class="chocolate-title mb-4">Sweet Messages for You</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <img src="/api/placeholder/200/200" alt="Chocolate 1" class="img-fluid rounded-circle mb-3">
+                                <p>"You're sweeter than all the chocolate in the world"</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <img src="/api/placeholder/200/200" alt="Chocolate 2" class="img-fluid rounded-circle mb-3">
+                                <p>"Every moment with you is as rich as dark chocolate"</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <img src="/api/placeholder/200/200" alt="Chocolate 3" class="img-fluid rounded-circle mb-3">
+                                <p>"You make my life deliciously wonderful"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 fade-in">
+            <p class="lead">With all my love ❤️</p>
+            <div class="chocolate-title display-4">Happy Chocolate Day!</div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
